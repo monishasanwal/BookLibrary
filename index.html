@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Library</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Using Font Awesome Icon Library for List and Grid icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Book Library</h1>
+      <input type="text" id="searchBar" placeholder="search here..." />
+    </header>
+
+    <section>
+      <div id="viewBtns">
+<!-- Buttons to choose list or grid view -->
+        <button id="listBtn" onclick="toggleView('list')">
+          <i class="fa fa-bars"></i> List
+        </button>
+        <button id="gridBtn" onclick="toggleView('grid')">
+          <i class="fa fa-th-large"></i> Grid
+        </button>
+      </div>
+<!-- Sort content dropdown -->
+      <div id="sortContent">
+        <label for="sort">Sort by</label>
+        <select name="sort" id="sort">
+          <option value="none">Select</option>
+          <option value="ascTitle">Title (A to Z)</option>
+          <option value="decTitle">Title (Z to A)</option>
+          <option value="publishedDate">Published Date</option>
+        </select>
+      </div>
+    </section>
+
+    <div id="booksContainer"></div>
+
+    <footer id="pagination">
+      <div id="arrowBtn">
+        <button id="next">Next</button>
+        <button id="previous">Previous</button>
+      </div>
+      <span id="current-page">of </span>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>
