@@ -10,16 +10,6 @@ Build a Book Library website using FreeAPI.app that will fetch and display book 
 - CSS
 - JavaScript
 
-## Requirements
-
-- Fetch books from the API and display them as a list/grid
-- Provide an option to user to switch between the viewing type of list v/s grid
-- Show book details including title, author, publisher, published date, and thumbnail
-- Implement a search bar to filter books by title or author
-- Implement a sort feature to list books in Alphabetical order based on their title, date of release (publishedDate)
-- Implement pagination on reaching the end of the page to call next set of details
-- Clicking on a book item, should open more details in a new tab (using infoLink)
-
 ## Features
 
 - **Fetch Books**: Retrieve book data from the API and display it in a list or grid format.
@@ -42,7 +32,7 @@ https://freeapi.hashnode.space/api-guide/apireference/getBooks
 
 Deployed on Netlify:
 
-library-of-books2.netlify.app
+https://book-library2.netlify.app/
 
 ## Screenshots
 
